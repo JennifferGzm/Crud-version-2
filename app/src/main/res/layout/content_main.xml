@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="#B1A1A8"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="DATOS DEL ARTICULO"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/compras" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/et_codigo"
+        android:layout_width="350dp"
+        android:paddingLeft="25dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Ingrese codigo"
+        android:drawableLeft="@drawable/codigo"
+        android:inputType="number"
+        android:background="@drawable/imput"
+        android:shadowColor="#0B0B0B"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:paddingLeft="25sp"
+        android:drawableLeft="@drawable/descripcion"
+        android:layout_marginLeft="10dp"
+        android:hint="Ingrese descripcion"
+        android:inputType="text"
+        android:background="@drawable/botones2"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:paddingLeft="25sp"
+        android:layout_marginLeft="10dp"
+        android:hint="Ingrese precio"
+        android:inputType="number"
+        android:background="@drawable/botones2"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:drawableLeft="@drawable/precio"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_guardar"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:drawableRight="@drawable/ic_save_24"
+        android:onClick="alta"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_consultar1"
+        android:layout_marginTop="10dp"
+        android:text="Consultar codigo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="consultaporcodigo"
+        android:layout_marginLeft="10dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_consultar2"
+        android:layout_marginTop="10dp"
+        android:text="Consultar por descripcion"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="350dp"
+        android:onClick="consultapordescripcion"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_eliminar"
+        android:layout_marginTop="10dp"
+        android:text="Borrar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="350dp"
+        android:onClick="bajaporcodigo"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_actualizar"
+        android:layout_marginTop="10dp"
+        android:text="Editar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+            android:onClick="modificacion"
+        android:shadowDx="0"
+        android:layout_marginLeft="10dp"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

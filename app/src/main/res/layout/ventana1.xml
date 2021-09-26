@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:background="#B1A1A8"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Busqueda por codigo"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/botones2"
+        android:drawableStart="@drawable/descripcion"
+        android:drawablePadding="5dp"
+        android:hint="Ingrese codigo"
+        android:inputType="number"
+        android:paddingLeft="25sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_buscar"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/ventana1"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Buscar"
+        android:textColor="#020202"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:text="X"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:background="@drawable/circulo1"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

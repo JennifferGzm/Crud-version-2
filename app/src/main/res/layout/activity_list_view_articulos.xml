@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_view_articulos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:background="#834E0D"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTADO DE ARTICULOS REGISTRADOS"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#FFF7F7"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            />
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:id="@+id/tv_destino"
+        android:layout_width="265dp"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="10dp"
+        android:background="#834E0D"
+        android:elevation="4dp"
+        android:text="Copyright (c) Jenniffer-Guzman\nAll rights reserved."
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#D8D4D4"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
